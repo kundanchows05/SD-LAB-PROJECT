@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/styles.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
@@ -14,46 +14,7 @@
     <title>Registration Form</title>
   </head>
   <body>
-    <nav>
-      <article class="Nav-Bar">
-        <a href="index.html"
-          ><img class="logo" src="IMAGES/logo5.png" alt="logo"
-        /></a>
-        <ul>
-          <a href="index.html">HOME</a>
-        </ul>
-        <ul>
-          <a href="about.html">ABOUT US</a>
-        </ul>
-        <ul>
-          <a href="Registration page.html">REGISTRATION</a>
-        </ul>
-        <ul>
-          <a href="Events.html">EVENTS</a>
-        </ul>
-  
-        <ul>
-          <a href="calendar.html">CALENDAR </a>
-        </ul>
-        <ul>
-          <a href="Gallery.html">GALLERY</a>
-        </ul>
-        <ul>
-          <button class="DB">
-            <a
-              class="in-button"
-              href="https://rzp.io/l/TtD0auforb"
-              target="_blank"
-              >DONATE</a
-            >
-          </button>
-        </ul>
-      </article>
-    </nav>
-    
-    <div class="images">
-      <img class="reg-img" src="Images/form image.png" alt="logo" />
-    </div>
+    <div class="images"><img class="reg-img" src="Images/form image.png" alt="logo" /></div>
     <article class="info">
       <h1>INTERN/VOLUNTEER REGISTRATION FORM</h1>
       <p>
@@ -90,34 +51,34 @@
       <form action="https://formspree.io/f/mzbykgga" method="POST">
         <div>
           <label for="name">Full Name</label><br />
-          <input type="text" name="Name" id="name" required minlength="3" maxlength="50" />
+          <input type="text" name="Name" id="name" />
         </div>
         <div>
           <label for="Email">Email ID</label><br />
-          <input type="email" required name="Email" id="Email" minlength="7" maxlength="30" />
+          <input type="email" name="Email" id="Email" />
         </div>
         <div>
           <label for="pn">Phone Number</label><br />
           <input
             type="number"
             name="Phone Number"
-            required
             min="0"
+            minlength="10"
             maxlength="10"
             id="pn"
           />
         </div>
         <div>
           <label for="Address">Full Address</label><br />
-          <input type="text" required name="Full Address" id="Address" minlength="3" maxlength="50" />
+          <input type="text" name="Full Address" id="Address" />
         </div>
         <div>
           <label for="Aadhar">Adhaar Card No</label><br />
           <input
             type="number"
             name="Adhaar Card No"
-            required
             min="0"
+            minlength="12"
             maxlength="12"
             id="Aadhar"
           />
@@ -127,14 +88,14 @@
             >What is your highest level of qualification[ latest-
             completed/pursuing]</label
           ><br />
-          <input type="text" required name="Degree" id="Q1" minlength="3" maxlength="15"/>
+          <input type="text" name="Degree" id="Q1" />
         </div>
         <div>
           <label for="Q2"
             >Do you have any experience in internship/volunteering? If yes -
             Name of the organisation</label
           ><br />
-          <input type="text" required name="Experience" id="Q2" minlength="1" maxlength="50" />
+          <input type="text" name="Experience" id="Q2" />
         </div>
         <div>
           <label for="IR">Internship role you're applying for</label>
@@ -185,15 +146,13 @@
         <div>
           <label for="date">Preferred starting date for the internship</label
           ><br />
-          <input type="date" required name="date" id="date" />
+          <input type="date" name="date" id="date" />
         </div>
         <div>
           <label for="Q3">Where did you hear about Aparigraha Foundation?</label
           ><br />
           <input
             type="text"
-            required
-            minlength="3" maxlength="50"
             name="Where did you hear about Aparigraha Foundation?"
             id="Address"
           />
@@ -205,9 +164,8 @@
           ><br />
           <input
             type="file"
-            required
             multiple
-            accept=".pdf,.doc"
+            accept=".jpg,.png,.pdf,.doc"
             name="file"
             id="file"
           />

@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap"
       rel="stylesheet"
     />
-    <title>LOGIN SYSYEM</title>
+    <title>LOGIN PAGE</title>
     <style>
       * {
         font-family: "Open Sans", sans-serif;
@@ -38,8 +38,6 @@
       }
       button {
         background-color: blue;
-        font-size: larger;
-        width: fit-content;
         border-radius: 5px;
         padding: 5px 8px;
         color: white;
@@ -63,7 +61,7 @@
       }
       a:hover {
         color: dodgerblue;
-        text-decoration: none;
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -71,26 +69,12 @@
     <article class="container">
       <form>
         <h2>Please sign in</h2>
-        <div><input type="text" placeholder="Email address" id="username" required /></div>
-        <div><input type="password" placeholder="Password" id="password" required /></div>
+        <div><input type="text" placeholder="Email address" /></div>
+        <div><input type="password" placeholder="Password" /></div>
         <div><input id="CB" type="checkbox" /> Remember Me</div>
-        <button type="submit" onclick="validate()">Sign in</button>
+        <button type="submit">Sign in</button>
         <a id="fp" href="https://www.google.com/" target="_blank">Forgot Password ?</a>
         <p>New Users,<a href=https://www.google.com/" target="_blank">Register here!!</a></p>
-        <script>
-          function validate()
-          {
-            var username=document.getElementById("username").value;
-            var password=document.getElementById("password").value;
-            if(username=="kundan" && password == "user123")
-            {
-              alert("login successfull");
-              return true;
-            }
-            else
-              alert("Invalid crendentials!!");
-          }
-        </script>
       </form>
     </article>
   </body>
